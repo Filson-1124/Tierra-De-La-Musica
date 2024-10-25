@@ -450,4 +450,71 @@ main p{
     
 }
 
+.map-container {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    height: auto;
+    width: 20.5rem;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.map-container h2 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.map-btn {
+    margin: 10px 0;
+    padding: 20px;
+    width: 18.75rem;
+    height: auto;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.map-btn:hover {
+    background-color: #ffd700;
+}
+
+.map-btn1 {
+    border-radius: 10px 10px 0 0;
+}
+
+.map-btn7 {
+    border-radius: 0 0 10px 10px;
+}
+
+.map {
+    display: none;
+}
+
+#map1, #map2, #map3, #map4, #map5, #map6, #map7{
+    width: 10rem;
+    height: auto;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+}
+
+
+
 

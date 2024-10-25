@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" defer></script>
-
+    <script src="map.js" defer></script>
     <title>Maps</title>
 </head>
 <body>
@@ -88,19 +88,35 @@
         <span>Tickets</span>
     </a>
     
-</div>
+    </div>
     </nav>
 
-        
-    </section>
 
     <button id="muter" onclick="mute()">
         <svg id="muted" class="muted" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"/></svg>
         <svg id="unmute" class="unmute audioButShow" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
     </button>
 
-
-
+    <div class="map-container">
+        <h2>Map</h2>
+        <button class="map-btn map-btn1" onclick="showMap('map1')">Coachella Interactive Map</button>
+        <button class="map-btn map-btn2" onclick="showMap('map2')">Main Stage</button>
+        <button class="map-btn map-btn3" onclick="showMap('map3')">Outdoor Theatre</button>
+        <button class="map-btn map-btn4" onclick="showMap('map4')">Gobi Tent</button>
+        <button class="map-btn map-btn5" onclick="showMap('map5')">Mojave Stage</button>
+        <button class="map-btn map-btn6" onclick="showMap('map6')">Sahara Stage</button>
+        <button class="map-btn map-btn7" onclick="showMap('map7')">Coachella Ferris Wheel</button>
+    </div>
     
+    <div class="map-holder">
+        <div id="map1" class="map">Content for Coachella Interactive Map</div>
+        <div id="map2" class="map">Content for Main Stage</div>
+        <div id="map3" class="map">Content for Outdoor Theatre</div>
+        <div id="map4" class="map">Content for Gobi Tent</div>
+        <div id="map5" class="map">Content for Mojave Stage</div>
+        <div id="map6" class="map">Content for Sahara Stage</div>
+        <div id="map7" class="map">Content for Coachella Ferris Wheel</div>
+    </div>   
+ 
 </body>
 </html>
