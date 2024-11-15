@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" defer></script>
     
+
     <title>Home</title>
 </head>
 <body>
@@ -20,7 +24,7 @@
                 </button>
             </li>
             <li class="link">
-                <a href="#" onclick=setActive(this)>
+                <a href="#heropage" onclick=setActive(this)>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
                     <span>Home</span>
                 </a>
@@ -58,7 +62,7 @@
                     </a>
                 </li>
             <li class="link">
-                <a href="#" onclick=setActive(this)>
+                <a href="#faq" onclick=setActive(this)>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
                     <span>FAQ</span>
                 </a>
@@ -72,7 +76,7 @@
             </li>
 
             <li class="link">
-                <a href="#">  
+                <a href="https://coachellamerch.shop" target="_blank">  
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
                                
                     <span>Store</span>
@@ -82,7 +86,7 @@
                 
         </ul>
     <div class="tix">
-        <a href="">
+        <a href="https://www.coachella.com/passes" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m368-320 112-84 110 84-42-136 112-88H524l-44-136-44 136H300l110 88-42 136ZM160-160q-33 0-56.5-23.5T80-240v-135q0-11 7-19t18-10q24-8 39.5-29t15.5-47q0-26-15.5-47T105-556q-11-2-18-10t-7-19v-135q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v135q0 11-7 19t-18 10q-24 8-39.5 29T800-480q0 26 15.5 47t39.5 29q11 2 18 10t7 19v135q0 33-23.5 56.5T800-160H160Zm0-80h640v-102q-37-22-58.5-58.5T720-480q0-43 21.5-79.5T800-618v-102H160v102q37 22 58.5 58.5T240-480q0 43-21.5 79.5T160-342v102Zm320-240Z"/></svg>
         <span>Tickets</span>
     </a>
@@ -90,14 +94,17 @@
 </div>
     </nav>
     <main>
-        <section class="heropage">
-            <video src="Coachella 2023 by Drone.mp4" preload="auto" autoplay loop id="coachella"></video>
+        <section class="heropage" id="heropage">
+           <video src="Coachella 2023 by Drone.mp4" preload="auto" autoplay loop id="coachella" muted></video>
             <div class="herocontent">
         <h4>2025</h4>
-        <h1>Coachella</h1>
+ 
+            <h1>COACHELLA.</h1>
+
+        
         <p>"Open road and Coachella mode"</p>
-        <button>Buy Ticket</button>
-        <a href="">
+        <button onclick="openCoachellaPasses()">Buy Ticket</button>
+        <a href="#about" id="aboutButton" )>
             <span>Explore coachella</span>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
 
@@ -115,7 +122,8 @@
 
     <section class="about" id="about">
         <h1 class="Title">What is Coachella?</h1>
-         <div class="pic"></div>
+        <img src="img/coachella/Coachella-Valley-concert-stage-1024x585.jpg" alt="" class="pic">
+    
         <div class="contents">
         <p>  Coachella was founded in 1999 by Paul Tollett and Goldenvoice after being inspired by a 1993 Pearl Jam concert at the Empire Polo Club in Indio, California. The event aimed to bring together diverse music genres and large-scale art installations in a desert setting. Originally a response to the rise of alternative festivals and dissatisfaction with the commercial nature of mainstream music events, Coachella has since evolved into one of the world’s most iconic music and arts festivals, attracting major artists and fans from around the globe.</p>
     </div>
@@ -129,7 +137,7 @@
         <div class="artistsContainer">
 
                 <div class="artistCard r1" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Blackpink.jpg" alt="" class="artistPic">
                     <h3>BLACKPINK</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -139,7 +147,7 @@
                 </div>
 
                 <div class="artistCard r2" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Billie Eilish.jpg" alt="" class="artistPic">
                     <h3>BILLIE EILISH</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -149,7 +157,7 @@
                 </div>
 
                 <div class="artistCard r3" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Doja Cat.jpg" alt="" class="artistPic">
                     <h3>DOJA CAT</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -159,7 +167,7 @@
                 </div>
 
                 <div class="artistCard r4" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/twiceuuu.jpg" alt="" class="artistPic">
                     <h3>TWICE</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -169,7 +177,7 @@
                 </div>
 
                 <div class="artistCard r5" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Megan Thee Stallion.jpg" alt="" class="artistPic">
                     <h3>MEGAN THE STALION</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -182,7 +190,7 @@
             <div class="artistsContainer"> 
 
                 <div class="artistCard r6" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/chapelle.gif" alt="" class="artistPic">
                     <h3>CHAPELL ROAN</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -192,7 +200,7 @@
                 </div>
 
                 <div class="artistCard r7" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Sabrina Carpenter 💋.jpg" alt="" class="artistPic">
                     <h3>SABRINA CARPENTER</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -202,7 +210,7 @@
                 </div>
 
                 <div class="artistCard r8" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Halsey.jpg" alt="" class="artistPic">
                     <h3>HALSEY</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -211,7 +219,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r9" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Chris Brown.jpg" alt="" class="artistPic">
                     <h3>CHRIS BROWN</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -220,7 +228,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r10" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/SZA.jpg" alt="" class="artistPic">
                     <h3>SZA</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -233,7 +241,7 @@
             <div class="artistsContainer"> 
 
                 <div class="artistCard r6" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Lana Del Rey.jpg" alt="" class="artistPic">
                     <h3>LANA DEL REY</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -243,7 +251,7 @@
                 </div>
 
                 <div class="artistCard r7" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/the weeknd.jpg" alt="" class="artistPic">
                     <h3>THE WEEKND</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -253,7 +261,7 @@
                 </div>
 
                 <div class="artistCard r8" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Bruno Mars.jpg" alt="" class="artistPic">
                     <h3>BRUNO MARS</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -262,7 +270,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r9" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Adele.jpg" alt="" class="artistPic">
                     <h3>ADELLE</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -271,7 +279,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r10" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Flyana Boss.jpg" alt="" class="artistPic">
                     <h3>FLYANA BOSS</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -285,7 +293,7 @@
             <div class="artistsContainer"> 
 
                 <div class="artistCard r6" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Troye Sivan.jpg" alt="" class="artistPic">
                     <h3>TROYE SIVAN</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -295,7 +303,7 @@
                 </div>
 
                 <div class="artistCard r7" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Ariana Grande.jpg" alt="" class="artistPic">
                     <h3>ARIANA GRANDE</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -305,7 +313,7 @@
                 </div>
 
                 <div class="artistCard r8" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Lady Gaga.jpg" alt="" class="artistPic">
                     <h3>LADY GAGA</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -314,7 +322,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r9" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/Taylor Swift.jpg" alt="" class="artistPic">
                     <h3>TAYLOR SWIFT</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -323,7 +331,7 @@
                     <p class="artistInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi, unde laborum aliquid est natus fuga, ad quos tempora id ducimus quis voluptatum dolore repudiandae!</p>
                 </div>
                 <div class="artistCard r10" id="artistCard">
-                    <img src="svg/IMG_20241017_163539.jpg" alt="" class="artistPic">
+                    <img src="img/Pics/ATEEZ/download (12).jpg" alt="" class="artistPic">
                     <h3>ATEEZ</h3>
                     <a onclick="toggleCard(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -340,6 +348,7 @@
 
     <section class="travelguide" id="travelguide">
             <h1 class="Title">How to go to Coachella? </h1>
+<<<<<<< HEAD
                 <div class="guideCons"></div>
     </section>
 <hr>
@@ -367,6 +376,194 @@
         </div>
     
         <script src="map.js" defer></script>
+=======
+                <div class="guideCons">
+                    <div class="travelHeaders">
+                        
+                         <ul>
+                            <h4>Airport Close to Coachella</h4>
+                            <li>
+                                <span>Palm Springs International Airport(PSP)</span>
+                                    <p> Distance to Coachella: 25 miles(30 mins by car approx.)</p>
+                            </li>
+                           
+                            <li>
+                                <span>Los Angeles International Airport(LAX)</span>
+                                    <p> Distance to Coachella: 145 miles( 2 hours 30 mins by car approx.)</p>
+                            </li>
+                            <li>
+                                <span>San Diego International Airport (SAN)</span>
+                                    <p> Distance to Coachella: 151 miles(2 hours 40 mins by car approx.)</p>
+                            </li>
+
+                         </ul>
+
+                       <div class="mapPlaceholder">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114950.95549312566!2d-116.30312622468428!3d33.68608864812727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80da588e87ce3caf%3A0xfd521c797b97bcf8!2sCoachella%2C%20CA%2C%20USA!5e1!3m2!1sen!2sph!4v1730544594407!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                     
+                       
+                    </div>
+
+                    <div class="travelDetails">
+                        <div class="firstPic"></div>
+                        <p class="firstInfo">
+                            If you have already booked tickets to the Coachella festival and you need to organize how to get to the Empire Polo Club in Indigo then look no further as we have you covered!
+                            Coachella is located at the Empire Polo Club in Indio, California, meaning that although Coachella doesn’t have its own airport, the closest airport is Palm Springs International Airport. Airlines that fly to this airport include American Airlines, Delta Airlines and United Airlines.               However, due to prices and the location flying from, some people choose to fly to other nearby airports such as Los Angeles International Airport (LAX) or San Diego International Airport. You can then get a taxi, rent a car or get on one of the Coachella Shuttle buses from LAX to the festival, for about $50 dollars each way.           Obviously how you will get to Coachella will depend on where you are coming from. Domestic travel within the USA will be different to if you are flying from Europe. Here are some common routes of how to get to Coachella, and which airlines to fly with.
+                        </p>
+
+                        <div class="secondInfo">
+                            <h3>Flying domestically to Coachella</h3>
+
+                            
+                                    <p>Palm Springs International Airport offers a wide range of domestic carriers to a host of US cities. If heading to Coachella through Palm Springs you'll e   asily be able to travel from Nashville, Indianapolis, Chicago, Dallas, Seattle, Atlanta, Boston, Los Angeles, New York, Las Vegas and more. This makes travelling to the festival really easy if you're a domestic traveller.</p>
+
+                            <h3>Flying from New York</h3>
+
+                                    <p>Flying domestically to Coachella means that you have more options for where to fly to, however, it will still be cheaper to fly to LAX. From JFK airport, you can fly to LAX with airlines such as Alaska Airlines, Delta or American Airlines. Alternatively, suppose you want to fly to Palm Springs, we recommend flying with airlines such as United, from New York La Guardia with a short stopover at Houston Airport, or from New York JFK to American Airlines with a short stopover at Phoenix Airport.</p>
+
+                            <h3>Flights from Las Vegas</h3>
+
+                                    <p>You can fly to Palm Springs Airport from Las Vegas McCarran with American Airlines which will feature a stopover at Phoenix. Alternatively, you can fly directly if choosing to fly to LAX, with Alaska, United or Delta.</p>
+                    </div>
+
+                    <div class="secondPic"> </div>
+
+                    <div class="thirdInfo">
+                        <h3>Flying from an international destination to Coachella</h3>
+
+                                <p>Palm Springs International Airport also has limited international destinations. The airline only offers direct services to Canada with the cities of Vancouver, Toronto, Edmonton, Calgary and Winnipeg being served. If travelling from further afield it may be beneficial to connect through one of the major carriers' hub airports, such as with American Airlines and their Dallas hub. However, you also have the option of flying into Los Angeles or San Diego airports, which have a greater level of international routes.</p>
+
+                       <h3> Flying from the UK & Ireland</h3>
+
+                                <p>Flying from London Heathrow, we recommend flying to LAX as this has many more flights arriving from the UK. Airlines that offer non-stop flights include British Airways, Virgin Atlantic, United Airlines, Delta and American Airlines. Alternatively, you could plan a short stop-over in Vancouver, and fly with Air Canada, Westjet or Air Transat for a lower price. To fly to Coachella from Dublin, we again recommend to fly to LAX. Flights here from Dublin are considerably cheaper than flying to the closer Palm Springs. Aer Lingus fly direct from Dublin to LAX, but to make it cheaper, airlines that fly this route with a stopover at London Heathrow include American Airlines. Check out our blog to find out how to plan the perfect stopover.</p>
+                    </div>
+                    <div class="thirdPic"></div>
+                    </div>
+                </div>
+         </section>
+
+
+    
+    <section class="FAQ" id="faq">
+        <div class="FAQTitle">
+            <h1 class="Title">FAQs</h1>
+            <h3>Have any questions? Read popular answers below.</h3>
+
+        </div>
+        <div class="faqQuestions">
+           
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: is this website owned by Coachella?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A:No, We are not owned by any company, Tierra Dela Musica is a standalone company that can be hired to feature or promote a festival through an interactive website.
+                    </p>
+                </div>    
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: How many passes I can buy?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: Ticket limit is 4 per household. Purchase over 4 admission tickets  will be subject to cancellation without notice. 
+                    </p>
+                </div>  
+                <div class="questions long">
+                    <div class="questionHeader"> 
+                    <h4>Q: Do you promote any other things other than Musical Festival?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: No , Our company is only dedicated on creating interactive static website for music festivals to be promoted.
+                    </p>
+                </div>  
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: When is the last date to update my shipping address?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: The last day to update your shipping address is February 2025
+                    </p>
+                </div>  
+       
+
+
+           
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: What's the weekend schedule?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: Schedules are released closer to the event dates
+                    </p>
+                </div>  
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: What is your refund policy?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: All sales are final
+                    </p>
+                </div>  
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: Are there extra fees?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: Any taxes abd fees will be reflected  for each item in your total before purchasing.
+                    </p>
+                </div>  
+                <div class="questions">
+                    <div class="questionHeader"> 
+                    <h4>Q: is there a payment plan for tickets?</h4> 
+
+                    <a onclick="toggleFAQ(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                        </a>
+                </div>
+
+                    <p>
+                        A: Yes, we offer a payment plan option for your order at checkout. Please note all payment in a payment plan will incur a flat $52 payment plan fee.
+                    </p>
+                
+            </div>
+        </div>
+>>>>>>> 07883172b096b4017f35ac64d90399080d0bfe63
     </section>
     </main>
     
