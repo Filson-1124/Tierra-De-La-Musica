@@ -3,7 +3,7 @@
     --line-clr: #e9ce94;
     --hover-clr: #f325e257;
     --text-clr: #ffffff;
-    --accent-clr: #5e53ff;
+    --accent-clr: #da25e0;
     --secondary-text-clr: #b0b3c1;
 }
 *{
@@ -13,24 +13,29 @@
 }
 
 html{
+   
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.5rem;
+    scroll-behavior: smooth;
 }
 body{
     
     min-height: 100dvh;
-    background: linear-gradient(to bottom,rgb(236, 24, 236) 0%, black 30%);
+    background: linear-gradient(to bottom,rgb(236, 24, 236) 0%, black 5%);
     color: var(--text-clr);
     display: grid;
     grid-template-columns: auto 1fr;
     height: auto;
+    
+    
 
 }
 main{
 
     margin-left: 60px;
+
 }
 
 #sidebar{
@@ -40,7 +45,7 @@ main{
     padding-inline: 5px 1em;
     background-color: transparent;
     backdrop-filter: blur(30px);
-    box-shadow:  10px 0px 20px  #da25e0;
+    box-shadow:  10px 0px 20px  var(--accent-clr);
     position: fixed;
     top: 0;
     align-self: start;
@@ -57,7 +62,7 @@ main{
 
 #sidebar.close{
     padding: 5px;
-    width: 60px;
+    width: 59px;
         .tix span {
             font-size: 5px;
             display: none;
@@ -191,8 +196,8 @@ main p{
 }
 
 .herocontent{
-    height: 800px;
-    width: 80%;
+    height: auto;
+    width: auto;
     display: flex;
     gap:80px;
     flex-direction: column;
@@ -202,17 +207,18 @@ main p{
     border-radius: 20px;
     color: #64aaeb; 
     overflow: hidden;
+    padding: 30px;
     
     >h4{
         font-size: 30px;
     }
     >h1{
-        font-size: 190px;
+        font-size: 140px;
     }
 
     >p{
         color: #0D3B66;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: bold;
     }
 
@@ -304,6 +310,7 @@ main p{
     position: fixed;
     display: flex;
     box-sizing: border-box;
+    border: none;
     background-color: var(--base-clr);
     width: 70px;
     height: 70px;
@@ -352,8 +359,8 @@ main p{
     
 }
 .pic{
-    height: 500px;
-    width: 900px;
+    height: 250px;
+    width: 600px;
     background-color: #ffffff59;
 }
 .contents{
@@ -362,13 +369,13 @@ main p{
 
     background-color: #ffffff4d;
     height: auto;
-    width: auto;
+    width: 60%;
     padding: 20px 20px 10px 30px;
     border-radius: 20px;
 
     >p{
         line-height: 1.5;
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -415,39 +422,64 @@ main p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 275px;
-    width:250px;
+    height: 185px;
+    width:150px;
     background-color: white;
     padding: 20px 50px 10px ;
     gap: 10px;
     overflow: hidden;
     transition: ease-in-out 200ms;
   
-    >p,h3{color: black;}
+    >h3{    
+      
+        color: black;
+        width: 90%;
+        font-size: .7rem;
+    }
+   
+
     
+    
+}
+.artistInfo{
+    font-size: .8rem;
+    color: black;
+}
+
+.artistCard a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+    border: solid 1px black;
+    transition: all 200ms ease;
+    svg{
+        align-self: center;
+        justify-self: center;
+    }
 }
 
 .expand{
-    height: 500px;
+
+    height: 400px;
+    a{
+        transform: rotate(180deg);
+    }
 }
 
 .artistPic{
     border-radius: 14px;
-    height: 200px;
-    width: 300px;
+    height: 120px;
+    width: 200px;
    
 }
 
-.travelguide{
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.guideCons{
-    
+#twice{
+    height: 200px;
+    width: 300px;
+   
 }
 
 .map-container {
@@ -515,6 +547,186 @@ main p{
     background-color: blue;
 }
 
+.travelguide{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.guideCons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+.travelHeaders{
+    display: flex;
+    gap: 100px;
+    width: auto;
+    align-self: center;
+    
+     >ul{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        >h4{
+            font-size: 2rem;
+            margin-bottom: 30px;
+         }
+     }
+}
+.travelHeaders p{
+    
+    color: #64aaeb;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.travelHeaders li span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.mapPlaceholder{
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+    transition: all 200ms ease-in-out;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+   }
+.mapPlaceholder:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 15px 0px #da25e0;
+}  
+
+.travelDetails{
+    align-self: center;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,minmax(1fr,600px));
+    gap: 20px;
+    padding:20px 50px;    
+}
+.firstPic{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+.firstInfo{
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: rgb(52, 52, 52);
+    border-radius: 20px;
+}
+
+.secondPic{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+.secondInfo{
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 2rem;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: rgb(52, 52, 52);
+    border-radius: 20px;
+}
+
+.thirdPic{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+.thirdInfo{
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 2rem;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: rgb(52, 52, 52);
+    border-radius: 20px;
+}
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.FAQTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        align-self: center;
+    }
+}
+.faqQuestions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 
+.questions{
+    width: 45%;
+    max-height: 20px;
+   
+   padding: 20px;
+    background-color: red;
+    border-radius: 10px;
+   
+    overflow: hidden;
+    transition: all 200ms ease;
+}
 
+.long{
+    font-size: 15px;
+}
+
+.xpandQuestion{
+   max-height: 500px;
+    
+     .questionHeader a{
+        transform: rotate(180deg);
+     }
+}
+.questionHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    >a{
+        justify-self: end;
+        align-self: flex-end;
+        transition: all 200ms ease;
+    }
+}
