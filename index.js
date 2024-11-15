@@ -7,6 +7,10 @@ const unmuteBut=document.getElementById('unmute')
 const artistCard=document.getElementById('artistCard')
 muter.play;
 muter.volume=0.07
+
+
+
+
 function toggleSideBar(){
     sidebar.classList.toggle('close')
     sidebarButton.classList.toggle('ikot')
@@ -23,6 +27,10 @@ function toggleCard(link){
     link.parentElement.classList.toggle('expand');
 }
 
+function toggleFAQ(link){
+    link.parentElement.parentElement.classList.toggle('xpandQuestion');
+}
+
 
 function mute(){
     if(muter.hasAttribute("muted")){
@@ -37,3 +45,8 @@ function mute(){
         muteBut.classList.add('audioButShow')
     }
 }
+function openCoachellaPasses() {
+    window.open("https://www.coachella.com/passes", '_blank');
+}
+
+
